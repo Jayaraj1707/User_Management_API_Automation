@@ -1,0 +1,9 @@
+{
+  "url": "%s/User?id=eq.",
+  "method": "PATCH",
+  "parameters": {
+    "username": "Naveen",
+    "password": "naveen@1234",
+    "age": 24
+  }
+}

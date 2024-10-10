@@ -1,0 +1,9 @@
+{
+  "url": "%s/User",
+  "method": "POST",
+  "parameters": {
+    "username": "Kali",
+    "password": "kali@1234",
+    "age": 25
+  }
+}
