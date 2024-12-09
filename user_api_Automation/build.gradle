@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':core')
+}
+
+test {
+    useTestNG()
+            {
+                useDefaultListeners = true
+                def suiteFile = '';
+                if (project.hasProperty('suiteFile')) {
+                    suiteFile = project.getProperty('suiteFile')
+                }
+                suites 'src/test/resources/testdata/suite/'+suiteFile+'.xml'
+                outputDirectory = file("$projectDir/test-output")
+
+            }
+    testLogging.showStandardStreams = true
+    systemProperties(System.getProperties())
+}

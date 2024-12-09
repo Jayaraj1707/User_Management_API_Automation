@@ -1,0 +1,4 @@
+rootProject.name = 'User_Management_API_Automation'
+include 'core'
+include 'user_api_Automation'
+
